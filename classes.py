@@ -42,7 +42,14 @@ class Transport :
         self.pointCard = pointCard
         self.exists = exists
     def ouverture(self) :
-        self.salle.set(pointCard, True)
+        if self.pointCard == "nord" :
+            self.salle.porteN = True
+        elif self.pointCard == "est" :
+            self.salle.porteE = True
+        elif self.pointCard == "sud" :
+            self.salle.porteS = True
+        elif self.pointCard == "ouest" :
+            self.salle.porteO = True
 
 class Salle :
     def __init__(self, porteN = False, porteE = False, porteS = False, porteO = False, objets = [], mecas = [], desc = "") :
@@ -58,14 +65,9 @@ class Salle :
         self.objets = objets
         self.mecas = mecas
         self.desc = desc
-    def setPorteN(self, value) :
-        self.porteN = value
-    def setPorteE(self, value) :
-        self.porteE = value
-    def setPorteS(self, value) :
-        self.porteS = value
-    def setPorteO(self, value) :
-        self.porteO = value
-    ###############################
-    def getPorteN(self) :
-        return self.porteN
+
+class Final :
+    def __init__(self, exists = False) :
+        """Objet de sortie du labyrinthe
+        exists : Le jeu est-il fini ?, un booléen"""
+        self.exists = exists
