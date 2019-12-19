@@ -134,7 +134,7 @@ fen.configure(background = colBack)
 fen.rowconfigure(0, weight = 1)
 fen.columnconfigure(0, weight = 1)
 
-desc = tk.Label(fen, text = intro, bg = colBack, font = Beng15, justify = tk.LEFT, wraplength = 1920)
+desc = tk.Label(fen, text = intro, bg = colBack, font = Beng15, justify = tk.LEFT, wraplength = fen.winfo_screenwidth())
 desc.grid(row = 0, sticky = 'nw')
 
 titre = tk.Label(fen, text = title, bg = colBack, font = Beng44)
