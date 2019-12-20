@@ -1,0 +1,22 @@
+aller  [(nord) | (est) | (sud) | (ouest)]
+- Déplace Taerntym dans la pièce adjacente dans la direction cardinale mentionnée
+- S'il n'y a pas de porte dans la direction où l'on souhaite aller, Taerntym se heurte au mur et reste dans la salle
+
+prendre (objet)
+- Ajoute l'objet à l'inventaire de Taerntym s'il est présent par terre dans la salle
+- S'il n'est pas présent, rien ne se passe
+
+poser (objet)
+- Taerntym pose l'objet s'il est présent dans son inventaire
+- S'il n'est pas présent, rien ne se passe
+
+utiliser (objet mécanisme)
+- Taerntym prend l'objet s'il est présent dans son inventaire et essaie de l'utiliser sur le mécanisme s'il est présent dans la salle
+- Si l'objet n'est pas dans l'inventaire de Taerntym, si le mécanisme n'est pas présent dans l'inventaire ou si l'objet ne doit pas interagir avec ce mécanisme, rien ne se passe
+
+observer [(objet) | (mécanisme)]
+- Taerntym observe un objet de son inventaire ou un mécanisme dans la salle et commente ce qu'il voit
+- Si l'objet n'est pas dans son inventaire ou si le mécanisme n'est pas présent dans la salle, rien ne se passe
+
+help
+- Affiche cette fenêtre
