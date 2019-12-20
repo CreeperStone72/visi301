@@ -38,7 +38,7 @@ Vous commencez immédiatement dans le labyrinthe. Pour connaître les fonctions,
 ## Versions
 
 **Version finale :** 2.1
-_Les anciennes versions peuvent être retrouvées dans le dossier _old_
+_Les anciennes versions peuvent être retrouvées dans le dossier old_
 
 **Version 2.1 - La version qui fonctionne**
 - 5 commandes fonctionnelles
@@ -57,11 +57,11 @@ _Les anciennes versions peuvent être retrouvées dans le dossier _old_
 - Une seule salle
 - Interface via la console
 
-_Les "versions" ci-dessous sont des programmes de tests. Ils peuvent également être retrouvés dans _old
+_Les "versions" ci-dessous sont des programmes de tests. Ils peuvent également être retrouvés dans old_
 
 **Version 0.1 - Idée pour commencer l'assemblage (entre les versions 1.2 et 2.1**
 - Tentative d'attacher ensemble la génération de labyrinthe et l'interprète
-- Échec => Toutes les cases pointent vers le même objet Salle (YaY)
+- Échec → Toutes les cases pointent vers le même objet Salle (YaY)
 
 **Interface utilisateur - ou comment j'ai arrêté de débugger et ai commencé à vouloir un jeu beau**
 - Interface graphique
@@ -76,5 +76,5 @@ _Les "versions" ci-dessous sont des programmes de tests. Ils peuvent également 
 
 ## Auteurs
 
-* **Anne Perez** _alias_ [@AnneIna](https://github.com/AnneIna)
+* **Anne Perez** _alias_ [@AnneIna](https://github.com/AnneIna) (_répertoire visi301-1 accessible [ici](https://github.com/AnneIna/visi301-1))_
 * **Christopher Stone** _alias_ [@CreeperStone72](https://github.com/CreeperStone72)
