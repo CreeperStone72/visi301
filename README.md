@@ -25,7 +25,9 @@ Vous devez d'abord télécharger les fichiers Python suivants :
 
 Vous devez également récupérer les fichiers texte Backstory et Epilogue, que vous placerez dans le même dossier que les fichiers Python.
 
-Après cela, ajouter le sous-dossier descriptions et tous les fichiers texte présents dedans dans ce même dossier
+Après cela, ajouter le sous-dossier descriptions et tous les fichiers texte présents dedans dans ce même dossier.
+
+Enfin, il vous faut télécharger le fichier BENGUIAB.TTF et l'exécuter afin d'installer la police de caractères Benguiat Bk BT utilisée par le programme si vous ne l'avez pas déjà.
 
 ## Démarrage
 
@@ -33,12 +35,12 @@ Pour démarrer le jeu, ouvrez main.py et compilez le programme.
 
 Une fois la fenêtre ouverte, entrez 'COMMENCER' dans la zone de saisie en respectant la casse.
 
-Vous commencez immédiatement dans le labyrinthe. Pour connaître les fonctions, leur syntaxe et leur structure, tapez 'help' dans la zone de saisie
+Vous commencez immédiatement dans le labyrinthe. Pour connaître les fonctions, leur syntaxe et leur structure, tapez 'help' dans la zone de saisie.
 
 ## Versions
 
 **Version finale :** 2.1
-_Les anciennes versions peuvent être retrouvées dans le dossier old_
+_Les anciennes versions peuvent être retrouvées dans le dossier old._
 
 **Version 2.1 - La version qui fonctionne**
 - 5 commandes fonctionnelles
@@ -57,7 +59,7 @@ _Les anciennes versions peuvent être retrouvées dans le dossier old_
 - Une seule salle
 - Interface via la console
 
-_Les "versions" ci-dessous sont des programmes de tests. Ils peuvent également être retrouvés dans old_
+_Les "versions" ci-dessous sont des programmes de tests. Ils peuvent également être retrouvés dans old._
 
 **Version 0.1 - Idée pour commencer l'assemblage (entre les versions 1.2 et 2.1**
 - Tentative d'attacher ensemble la génération de labyrinthe et l'interprète
