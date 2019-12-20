@@ -74,7 +74,6 @@ def clavier(event):
             if not(newGame) :
                     inst = commande.lower().split()[0]
 
-                    # Cas particulier 2 : ALLER
                     if inst == "aller" :
                         res, erreur = cmd.aller(commande.lower().split()[1], currentX, currentY)
                         currentX = res[0]
@@ -108,11 +107,15 @@ def clavier(event):
 
                     elif inst == "observer" :
                         obj = " ".join(commande.lower().split()[1:])
-                        res, erreur = cmd.observer(obj)
+                        res, erreur = cmd.observer(obj, currentX, currentY)
                         if not(erreur == "") :
                             msg.showerror("404 description not found", erreur)
                         else :
                             msg.showinfo("Description", res)
+
+                    elif inst == "help" :
+                        res = subFc.recupDesc("help-commandes")
+                        msg.showinfo("Commandes", res)
 
                     # Dans tous les cas, on efface le contenu en appuyant sur ENTER
                     entree.delete(0,tk.END)

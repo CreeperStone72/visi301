@@ -73,17 +73,21 @@ def utiliser(objets, xForm, yForm) :
                     erreur = "Huh, on dirait que ça ne sert pas pour ça..."
     return res, erreur
 
-def observer(objet) :
+def observer(objet, xForm, yForm) :
     """Affiche la description d'un objet
 
     Input : objet, une chaîne de caractères
     Output : res, une chaîne de caractères
              erreur, une chaîne de caractères"""
     res = ""
-    erreur = "Je n'ai pas cet objet..."
+    erreur = "Je ne sais pas quoi dire..."
     inv = subFc.inventaire(genMaze.items)
     for item in inv :
         if (item.name.lower() == objet) and (item.canBeObserved) :
             res = item.desc
+            erreur = ""
+    for meca in genMaze.maze[xForm][yForm].mecas :
+        if (meca.name.lower() == objet) :
+            res = meca.desc
             erreur = ""
     return res, erreur

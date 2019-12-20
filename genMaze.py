@@ -6,8 +6,8 @@ from sousFonctions import recupDesc
 #################################################################################################################################
 # Déclaration des variables liées au labyrinthe
 ### \/ VARIABLES MODIFIABLES. POUR MODIFIER LA TAILLE DU LABYRINTHE, MODIFIER LES VALEURS DE CES DEUX VARIABLES \/ ###
-ligne = 7
-colonne = 7
+ligne = 13
+colonne = 13
 ### /\ VARIABLES MODIFIABLES. POUR MODIFIER LA TAILLE DU LABYRINTHE, MODIFIER LES VALEURS DE CES DEUX VARIABLES /\ ###
 
 ligneFin = ((ligne - 1)//2)
@@ -55,7 +55,7 @@ porte = classes.Mecanism("Grosse porte", grosseCle, freedom, True, recupDesc("me
 mecas = [seau, feu, sable, armure, porte]
 
 ### Étape 6 - Positionnement des objets et mécanismes
-nb_pos = len(mecas)
+nb_pos = len(mecas) + 1
 
 ### Étape 7 - Association des positions et objets
 #### 71 - Placement des mécanismes dans le labyrinthe
@@ -64,7 +64,7 @@ choix = mazeGen.mecanisme(laby, nb_pos)
 #### 72 - Liste des abscisses et liste des ordonnées des salles avec mécanismes dans le labyrinthe final
 meca_x=[]
 meca_y=[]
-for i in range(len(choix)):
+for i in range(1, len(choix)):
     meca_x.append((laby[1][i] - 1) // 2)
     meca_y.append((laby[2][i] - 1) // 2)
 
@@ -78,7 +78,7 @@ for i in range(ligneFin) :
     for j in range(colFin) :
         caseTempMeca = []
         caseTempItem = []
-        for k in range(len(choix)):
+        for k in range(len(choix) - 1):
             if i == meca_x[k] and j == meca_y[k] :
                 if type(mecas[k]) == classes.Item :
                     caseTempItem.append(mecas[k])
